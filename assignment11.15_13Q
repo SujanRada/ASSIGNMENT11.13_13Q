@@ -1,0 +1,174 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+\parindent 0px
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{ASSIGNMENT11.15\_13Q}
+\author{EE22BTECH11219 - Sai Sujan Rada$^{}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section*{\flushleft\textbf{\begin{LARGE}QUESTION:\end{LARGE}}}
+\vspace{0.4cm}
+
+Given below are some functions of x and t to 
+represent the displacement (transverse
+or longitudinal) of an elastic wave. State which of these represents \brak a travelling
+wave, \brak {ii} a stationary wave or \brak {iii} none at all:
+
+\begin{enumerate}
+\item[(a)]  $y = 2\cos \brak{3x} \sin \brak{10t}$
+
+\vspace{0.2cm}
+\item[(b)] $y=2\sqrt{x-vt}$
+
+\vspace{0.2cm}
+\item[(c)] $y = 3\sin \brak{5x - 0.5t} + 4\cos \brak{5x - 0.5t}$
+
+\vspace{0.2cm}
+\item[(d)] $y = \cos x \sin t + \cos 2x \sin 2t$
+\end{enumerate}
+
+\vspace{0.2cm}
+\section*{\flushleft\textbf{\begin{LARGE}SOLUTION:\end{LARGE}}}
+\vspace{0.4cm}
+
+TRAVELLING WAVE: 
+
+\vspace{0.2cm}
+
+The general equation of a travelling wave is,
+
+$y \brak{x,t} =A \sin  \brak{kx \pm \omega t} $
+
+Here, the amplitude of the wave is $A$, it's angular velocity is $\omega$ and it's position is $x$ and it's wavenumber is $k$.
+
+\vspace{0.4cm}
+STATIONARY WAVE:
+
+\vspace{0.2cm}
+
+The general equation of a stationary wave is,
+
+$y\brak{ x,t }=A\sin kx\cos \omega t $
+
+Here, the amplitude of the wave is $A$, it's angular velocity is $\omega$ and it's position is $x$ and it's wavenumber is $k$.
+
+\vspace{0.4cm}
+
+\begin{table}[htbp]
+    \centering
+    \def\arraystretch{2}
+    \begin{tabular}{|p{4cm}|p{4cm}|}
+    \hline
+    TRAVELLING WAVE    &  STATIONARY WAVE \\ \hline
+    $y \brak{x,t} =A \sin  \brak{kx \pm \omega t} $ & $y\brak{ x,t }=A\sin kx\cos \omega t $ \\   \hline
+    $A$=Amplitude, $\omega$=angular velocity, $x$=position of the particle, $k$=wavenumber & $A$=Amplitude, $\omega$=angular velocity, $x$=position of the particle, $k$=wavenumber \\ \hline
+    \end{tabular}
+    \caption{Travelling wave $vs$ Stationary wave}
+    \label{tab:11.15.13.1}
+\end{table}
+\brak a The given equation is:
+                    $y = 2\cos \brak{3x} \sin \brak{10t}$
+
+                    \vspace{0.2cm}
+                    \begin{figure}[htbp]
+                        \centering
+                        \includegraphics[width=\columnwidth]{Figure_a.png}
+                        \caption{DIPLACEMENT $vs$ TIME-graph1}
+                        \label{fig:11.15.13.1}
+                    \end{figure}
+
+We can observe the nodes and antinodes in the graph with fixed spatial pattern and different amplitude peaks at various positions of x maintaining symmetry with axis.This shows that the graph is stationary or a standing wave.
+
+\vspace{0.4cm}
+\brak b The given equation is:
+                        $y=2\sqrt{x-vt}$
+
+                        \vspace{0.2cm}
+                        \begin{figure}[htbp]
+                            \centering
+                            \includegraphics[width=\columnwidth]{Figure_b.png}
+                            \caption{DIPLACEMENT $vs$ TIME-graph2}
+                            \label{fig:11.15.13.2}
+                        \end{figure}
+
+We can observe the graph and conclude that the given equation is not a wave as there is no periodic oscillation and proper wave shape.
+
+\vspace{0.4cm}
+\brak c The given equation is:
+                         {$y = 3\sin \brak{5x - 0.5t} + 4\cos \brak{5x - 0.5t}$}
+
+                         \vspace{0.2cm}
+                         \begin{figure}[htbp]
+                             \centering
+                             \includegraphics[width=\columnwidth]{Figure_c.png}
+                             \caption{DIPLACEMENT $vs$ TIME-graph3}
+                             \label{fig:11.15.13.3}
+                         \end{figure}
+                         
+We can observe the graph having exhibiting periodic oscilltions with equal amplitude and proper sinusoidal wave shape uniformly. Thus, we can conclude that is a travelling wave.
+
+\vspace{0.4cm}
+\brak d The given equation is:
+                        $y = \cos x \sin t + \cos 2x \sin 2t$
+
+                        \vspace{0.2cm}
+                        \begin{figure}[htbp]
+                            \centering
+                            \includegraphics[width=\columnwidth]{Figure_d.png}
+                            \caption{DIPLACEMENT $vs$ TIME-graph3}
+                            \label{fig:11.15.13.4}
+                        \end{figure}
+                        
+
+We can observe fixed spatial patter but with multiple frequencies. The graph even shows interference patterns having uniformity by which we can say it is a superimposed stationary wave equation.
+                    
+\end{document}
