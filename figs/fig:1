@@ -1,0 +1,6 @@
+\begin{figure}[ht]
+                        \centering
+                        \includegraphics[width=\columnwidth]{a.png}
+                        \caption{DIPLACEMENT $vs$ TIME-graph1}
+                        \label{fig:1}
+ \end{figure}
